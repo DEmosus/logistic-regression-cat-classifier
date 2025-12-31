@@ -1,6 +1,6 @@
 ## Purpose
 
-This notes is a foundation builder for deep learning. It focuses on:
+This notebook is a foundation builder for deep learning. It focuses on:
 
 - Writing clean, vectorized Python
 - Using NumPy instead of loops
@@ -291,3 +291,4 @@ Think of deep learning as:
 **Input → Linear Algebra → Activation → Loss → Gradient → Update**
 
 > Every function you coded here appears again and again in neural networks.
+
