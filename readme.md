@@ -103,45 +103,45 @@ project-root/
 
 ## Forward Propagation
 
-\[
+$$
 z = w^T x + b
-\]
+$$
 
-\[
+$$
 \hat{y} = \sigma(z) = \frac{1}{1 + e^{-z}}
-\]
+$$
 
 ---
 
 ## Binary Cross-Entropy Loss
 
-\[
+$$
 J = -\frac{1}{m} \sum\_{i=1}^{m} \Big[ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) \Big]
-\]
+$$
 
 ---
 
 ## Gradients
 
-\[
+$$
 dw = \frac{1}{m} X ( \hat{Y} - Y )^T
-\]
+$$
 
-\[
+$$
 db = \frac{1}{m} \sum\_{i=1}^{m} \big( \hat{y}^{(i)} - y^{(i)} \big)
-\]
+$$
 
 ---
 
 ## Gradient Descent Updates
 
-\[
+$$
 w := w - \alpha \cdot dw
-\]
+$$
 
-\[
+$$
 b := b - \alpha \cdot db
-\]
+$$
 
 ---
 
@@ -161,17 +161,17 @@ b := b - \alpha \cdot db
 - ✅ Visualized misclassified images (e.g., blurry cats, non-cats with cat-like texture).
 - ✅ Plotted cost vs. iterations for different learning rates:
 
-\[
+$$
 \alpha = 0.01 \quad \rightarrow \quad \text{May diverge or oscillate}
-\]
+$$
 
-\[
+$$
 \alpha = 0.001 \quad \rightarrow \quad \text{Good convergence (often optimal)}
-\]
+$$
 
-\[
+$$
 \alpha = 0.0001 \quad \rightarrow \quad \text{Slow but stable convergence}
-\]
+$$
 
 ---
 
@@ -193,8 +193,9 @@ b := b - \alpha \cdot db
 
 Deep learning is just repeated applications of the same **6-step loop**:
 
-\[
-\text{Input} \;\;\rightarrow\;\; \text{Linear} \;\;\rightarrow\;\; \text{Activation} \;\;\rightarrow\;\; \text{Loss} \;\;\rightarrow\;\; \text{Gradient} \;\;\rightarrow\;\; \text{Update}
-\]
+$$
+\text{Input} \rightarrow\ \text{Linear} \rightarrow\ \text{Activation} \rightarrow \text{Loss} \rightarrow \text{Gradient} \rightarrow \text{Update}
+$$
 
 ---
+
